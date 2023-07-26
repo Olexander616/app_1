@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Verify_APP</string>
     <string name="TextView">Створіть аккаунт</string>
+    <string name="Auth">Автризація</string>
+    <string name="Go">Зареїструватися</string>
 </resources>

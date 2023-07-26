@@ -1,15 +1,24 @@
 package com.example.verify_app
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val LinkTOAuth = findViewById<TextView>(R.id.TextView_go_reg)
+
+        LinkTOAuth.setOnClickListener{
+            val intent = Intent(this,AuthActivity::class.java)
+            startActivity(intent)
+        }
 
         val userlogin: EditText = findViewById(R.id.user_login)
         val userpass: EditText = findViewById(R.id.user_pass)

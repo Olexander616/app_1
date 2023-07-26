@@ -5,21 +5,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#201E28"
-    tools:context=".MainActivity">
+    android:background="#133333"
+    tools:context=".AuthActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TextView"
+        android:id="@+id/TextView_auth"
         android:textColor="#fdfdfd"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:textStyle="bold"
-        android:text="@string/TextView"/>
+        android:text="@string/Auth"/>
 
     <EditText
-        android:id="@+id/user_login"
+        android:id="@+id/user_login_auth"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:ems="10"
@@ -31,7 +31,7 @@
         android:hint="Enter login"/>
 
     <EditText
-        android:id="@+id/user_pass"
+        android:id="@+id/user_pass_auth"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:ems="10"
@@ -42,35 +42,22 @@
         android:gravity="center"
         android:hint="Enter pass"/>
 
-    <EditText
-        android:id="@+id/user_email"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:textColor="#fdfdfd"
-        android:inputType="textEmailAddress"
-        android:textColorHint="#6a6a6a"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:hint="Enter e-mail" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_auth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="#6a6a6a"
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="Create user" />
-
+        android:text="Login" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TextView_go_reg"
+        android:id="@+id/TextView_go_auth"
         android:textColor="#fdfdfd"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:textStyle="bold"
-        android:text="@string/Auth"/>
+        android:text="@string/Go"/>
 </LinearLayout>
