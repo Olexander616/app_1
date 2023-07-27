@@ -31,8 +31,12 @@ class AuthActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please chek all fields.", Toast.LENGTH_SHORT).show()
             }else{
                 authorization(login,pass)
-                if(DBHelper(this,null).getUser(login,pass)){userlogin.text.clear()
-                userpass.text.clear()}
+                if(DBHelper(this,null).getUser(login,pass)){
+                    userlogin.text.clear()
+                    userpass.text.clear()
+
+                val intent = Intent(this,ItemsActivity::class.java)
+                startActivity(intent)}
             }
         }
     }

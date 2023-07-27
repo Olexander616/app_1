@@ -3,4 +3,5 @@
     <string name="TextView">Створіть аккаунт</string>
     <string name="Auth">Автризація</string>
     <string name="Go">Зареїструватися</string>
+    <string name="Items">Товари</string>
 </resources>
