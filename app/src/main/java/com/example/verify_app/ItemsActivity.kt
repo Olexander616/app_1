@@ -2,6 +2,7 @@ package com.example.verify_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class ItemsActivity : AppCompatActivity() {
@@ -16,5 +17,7 @@ class ItemsActivity : AppCompatActivity() {
         items.add(Item(2,"wheel","wheel title","wheel desc","wheel text",2000))
         items.add(Item(3,"washing_machine","washing machine title","washing machine desc","washing machine text",3000))
 
+        itemsList.layoutManager = LinearLayoutManager(this)
+        itemsList.adapter = ItemsAdapter(items,this)
     }
 }

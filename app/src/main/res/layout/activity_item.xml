@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="#FFBB86FC"
     android:layout_width="match_parent"
-    android:paddingBottom="20dp"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="20dp">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/sofa" />
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity">
 
     <TextView
-        android:id="@+id/textView_title"
+        android:id="@+id/item_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -27,7 +20,7 @@
         android:text="Title" />
 
     <TextView
-        android:id="@+id/textView_desc"
+        android:id="@+id/item_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -36,24 +29,18 @@
         android:textSize="16dp"
         android:textStyle="bold"
         android:text="Desc" />
-
-    <TextView
-        android:id="@+id/textView_Price"
+    <ImageView
+        android:id="@+id/item_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingVertical="10dp"
-        android:textSize="16dp"
-        android:paddingLeft="10dp"
-        android:textStyle="bold"
-        android:text="Price" />
-
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/sofa" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/item_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingLeft="10dp"
-        android:text="Button" />
+        android:text="Buy" />
 </LinearLayout>
